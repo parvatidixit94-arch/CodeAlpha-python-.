@@ -1,0 +1,40 @@
+def chatbot():
+    print("=" * 40)
+    print(" Welcome to Smart ChatBot")
+    print("Type 'bye' to exit")
+    print("=" * 40)
+
+    while True:
+        user = input("\nYou: ").lower()
+
+        if user in ["hello", "hi", "hey"]:
+            print("Bot: Hello! Nice to meet you.")
+
+        elif user == "how are you":
+            print("Bot: I am fine. Thanks for asking!")
+
+        elif user == "what is your name":
+            print("Bot: My name is Smart ChatBot.")
+
+        elif user == "who made you":
+            print("Bot: I was created by parvati.")
+        elif user == "what can you do":
+            print("Bot: I can answer simple questions and chat with you.")
+
+        elif user == "help":
+            print("Bot: You can ask me things like:")
+            print("     - hello")
+            print("     - how are you")
+            print("     - what is your name")
+            print("     - who made you")
+            print("     - what can you do")
+            print("     - bye")
+
+        elif user == "bye":
+            print("Bot: Goodbye! Have a great day.")
+            break
+
+        else:
+            print("Bot: Sorry, I don't understand that question.")
+
+chatbot()
